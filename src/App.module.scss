@@ -1,0 +1,56 @@
+html {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 400;
+   font-size: 1rem;
+   line-height: 1.1;
+}
+
+.currentTimeZone {
+   padding: 0 230px 0 30px;
+   overflow-x: hidden;
+   height: 100vh;
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 2rem;
+}
+
+.parisTimeZone {
+   padding: 0 30px;
+   overflow-x: hidden;
+   height: 100vh;
+   background-image: url('../src/img/paris.jpg');
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 1rem;
+}
+
+.newYorkTimeZone {
+   padding: 0 30px;
+   overflow-x: hidden;
+   height: 100vh;
+   background-image: url('../src/img/newYork.jpg');
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 1rem;
+}
+.tokyoTimeZone {
+   padding: 0 30px;
+   overflow-x: hidden;
+   height: 100vh;
+   background-image: url('../src/img/tokyo.jpg');
+   background-size: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 1rem;
+}

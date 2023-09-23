@@ -1,0 +1,177 @@
+.wrapper {
+        display: block;
+        margin-bottom: 30px;
+        background-color: #e8e0fe;
+        padding: 7px 15px;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0 5px 9px -6px #171717;
+        -moz-box-shadow: 0 5px 9px -6px #171717;
+        box-shadow: 0 5px 9px -6px #171717;
+        position: relative;
+}
+
+.wrapperChecked {
+        display: block;
+        margin-bottom: 30px;
+        background-color: #e8e0fe;
+        padding: 7px 15px;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0 5px 9px -6px #171717;
+        -moz-box-shadow: 0 5px 9px -6px #171717;
+        box-shadow: 0 5px 9px -6px #171717;
+        position: relative;
+
+        &::after {
+                content: '';
+                position: absolute;
+                min-width: 200px;
+                width: 70%;
+                height: 3px;
+                border-radius: 5px;
+                text-align: center;
+                left: 50%;
+                top: 43%;
+                transform: translateX(-50%);
+                background-color: #05c87a;
+        }
+}
+
+
+.addInput {
+        border: 2px solid #6b39e8;
+        width: 90%;
+        background-color: #fff;
+        padding: 3px 10px;
+        border-radius: 5px;
+        line-height: 1.3;
+
+        &:active {
+                outline: 0;
+                outline-offset: 0;
+        }
+
+        &:focus {
+                outline: 0;
+                outline-offset: 0;
+        }
+}
+
+.addInput:-webkit-autofill:hover,
+.addInput:-webkit-autofill:focus,
+.addInput:-webkit-autofill,
+.addInput:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-font-feature-settings: inherit;
+}
+
+.favouriteItem {
+        display: block;
+        margin-bottom: 30px;
+        background-color: #cb98da;
+        padding: 5px 15px;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0 5px 9px -6px #171717;
+        -moz-box-shadow: 0 5px 9px -6px #171717;
+        box-shadow: 0 5px 9px -6px #171717;
+        position: relative;
+}
+
+.itemWrapper {
+        display: flex;
+        justify-content: space-between;
+}
+
+.markWrapper {
+        position: relative;
+}
+
+.noChecked {
+        min-width: 35px;
+        min-height: 35px;
+        padding-left: 4px;
+        padding-top: 3px;
+        border-radius: 50%;
+        border: 4px solid #05c87a;
+        background-color: #e6e7f6;
+        color: #05c87a;
+        position: absolute;
+        left: -35px;
+        bottom: 0px;
+}
+
+.text {
+        margin: 0;
+        word-break: break-all;
+        margin: 0 1rem;
+}
+
+.emptyLeft {
+        min-width: 17.5px;
+}
+
+.emptyRight {
+        min-width: 22.9px;
+}
+
+.addImportant {
+        display: flex;
+        align-items: center;
+        background-color: #6b39e8;
+        position: relative;
+        left: 20%;
+        top: -27px;
+        padding: 0.4rem;
+        border-radius: 50%;
+        color: white;
+}
+
+.btnWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.editBtn {
+        display: inline-block;
+        background-color: #6b39e8;
+        text-align: center;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+        color: white;
+        cursor: pointer;
+        margin-right: 0.5rem;
+
+        &:active {
+                border: none;
+                outline: none;
+        }
+
+        &:focus {
+                border: none;
+                outline: none;
+        }
+}
+
+.delBtn {
+        display: inline-block;
+        background-color: #f58874;
+        text-align: center;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.3rem;
+        color: white;
+        cursor: pointer;
+
+        &:active {
+                border: none;
+                outline: none;
+        }
+
+        &:focus {
+                border: none;
+                outline: none;
+        }
+}

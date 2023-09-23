@@ -1,0 +1,26 @@
+.delBtn {
+   display: inline-block;
+   background-color: #f58874;
+   text-align: center;
+   margin: 0 auto;
+   border: 1px solid transparent;
+   border-radius: 0.5rem;
+   padding: 10px 15px;
+   margin-bottom: 1rem;
+   color: white;
+   cursor: pointer;
+   -webkit-box-shadow: 0 7px 9px -6px #171717;
+   -moz-box-shadow: 0 7px 9px -6px #171717;
+   box-shadow: 0 7px 9px -6px #171717;
+   z-index: 2;
+
+   &:active {
+      border: none;
+      outline: none;
+   }
+
+   &:focus {
+      border: none;
+      outline: none;
+   }
+}

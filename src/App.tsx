@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC, ReactNode, useEffect, useState } from 'react'
+import Clock from './components/clock/clock'
+import ToDoContainer from './layouts/toDoContainer'
+import fetchAll from './api/cities.api'
+import styles from './App.module.scss'
+import { City } from './modelToDo'
+import Loading from './components/loading/loading'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: FC = () => {
+	const [cityList, setCityList] = useState<City[] | undefined>()
+
+	useEffect(() => {
+		fetchAll().then((data: City[]) => setCityList(data))
+	}, [])
+
+	return (
+		cityList ?
+		<div className={styles.currentTimeZone}>
+			<Clock cities={cityList} />
+			<ToDoContainer />
+		</div> : <Loading />
+	)
 }
-
-export default App;
+export default App

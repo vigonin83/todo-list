@@ -1,0 +1,27 @@
+.btn {
+   position: absolute;
+   display: inline-block;
+   text-align: center;
+   background-color: #6b39e8;
+   color: white;
+   text-align: center;
+   margin-left: -2rem;
+   margin: 0 auto;
+   border: none;
+   border-radius: 50%;
+   width: 3rem;
+   height: 3rem;
+   padding-top: 5px;
+   cursor: pointer;
+   top: 50%;
+   right: -10px;
+   transform: translateY(-50%);
+   &:active {
+      border: none;
+      outline: none;
+   }
+   &:focus {
+      border: none;
+      outline: none;
+   }
+}
